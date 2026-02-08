@@ -3,7 +3,7 @@
 
 /* CSS Variables */
 :root {
-    --primary-color: #2ecc71;
+    --primary-color: #4085d4d5;
     --secondary-color: #333;
     --text-color: #555;
     --bg-color: #fff;
@@ -62,6 +62,15 @@ img {
     margin-bottom: 60px;
 }
 
+.section-title::before {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 10px auto 0;
+}
+
 .section-title {
     font-size: 36px;
     color: var(--secondary-color);
@@ -74,7 +83,7 @@ img {
 .section-title::after {
     content: '';
     display: block;
-    width: 60px;
+    width: 80px;
     height: 3px;
     background: var(--primary-color);
     margin: 10px auto 0;
@@ -97,7 +106,8 @@ img {
 }
 
 .btn-primary {
-    background: var(--primary-color);
+    background: transparent;
+    border-color: var(--primary-color);
     color: var(--white);
 }
 
@@ -199,7 +209,7 @@ img {
 }
 
 .hero-content .greeting {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 300;
     margin-bottom: 10px;
 }
