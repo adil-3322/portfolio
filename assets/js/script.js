@@ -145,7 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const circumference = 2 * Math.PI * radius;
 
     const renderSkills = () => {
-        if (!skillsGrid) return;
+        if (!skillsGrid) {
+            console.error("Skills grid not found!"); // Debugging help
+            return;
+        }
 
         let html = '';
         skillsData.forEach(skill => {
